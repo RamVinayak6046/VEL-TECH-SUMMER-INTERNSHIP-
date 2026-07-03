@@ -1,0 +1,214 @@
+/* ===========================
+   South Central Railway
+   Intern Registration Portal
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#e8f4ff,#f8fbff);
+    padding:40px;
+}
+
+/* Main Container */
+
+table{
+    width:80%;
+    margin:auto;
+    background:#ffffff;
+    border-collapse:collapse;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+
+h2{
+    color:#003366;
+    text-align:center;
+    margin-top:20px;
+    font-size:30px;
+}
+
+h3{
+    text-align:center;
+    color:#555;
+    margin-bottom:15px;
+}
+
+hr{
+    width:80%;
+    margin:15px auto;
+    border:1px solid #0056b3;
+}
+
+/* Fieldset */
+
+fieldset{
+    margin:20px;
+    padding:20px;
+    border:2px solid #0077cc;
+    border-radius:12px;
+    transition:.4s;
+}
+
+fieldset:hover{
+    transform:scale(1.01);
+    box-shadow:0 0 20px rgba(0,119,204,.25);
+}
+
+legend{
+    font-size:18px;
+    font-weight:bold;
+    color:#003366;
+    padding:0 10px;
+}
+
+/* Labels */
+
+label{
+    font-weight:bold;
+    color:#333;
+}
+
+/* Table */
+
+td{
+    padding:12px;
+    vertical-align:top;
+}
+
+/* Input Fields */
+
+input[type=text],
+input[type=date],
+select,
+textarea,
+input[type=file]{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #cccccc;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+    border-color:#0077cc;
+    box-shadow:0 0 10px rgba(0,119,204,.3);
+
+}
+
+/* Radio & Checkbox */
+
+input[type=radio],
+input[type=checkbox]{
+
+    margin-right:8px;
+    cursor:pointer;
+    transform:scale(1.1);
+
+}
+
+/* Submit Button */
+
+input[type=submit]{
+
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type=submit]:hover{
+
+    background:#0056b3;
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+/* Reset Button */
+
+input[type=reset]{
+
+    background:#6c757d;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+    margin-left:10px;
+}
+
+input[type=reset]:hover{
+
+    background:#495057;
+    transform:translateY(-4px);
+
+}
+
+/* Smooth Animation */
+
+table{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+table{
+    width:100%;
+}
+
+input[type=text],
+input[type=date],
+select,
+textarea,
+input[type=file]{
+    width:100%;
+}
+
+}
